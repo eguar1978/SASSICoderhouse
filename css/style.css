@@ -4,17 +4,21 @@ body {
 nav {
   background: linear-gradient(180deg, black 0%, #b32a15 100%); }
 
-.navbar-nav > li {
+.menu__lista li {
   padding-left: 15px;
   padding-right: 15px; }
+  .menu__lista li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; }
 
-.navbar-nav > li > a {
+.menu__lista .menu__lista__items:hover {
   color: #fff;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
+  transform: scale(0.98, 1.1); }
 
-.fa-gavel {
-  /*transform: rotate(270deg);*/
+.mazo__logo {
   color: white;
   margin: 5px;
   animation-name: martillo;
@@ -26,62 +30,42 @@ nav {
   to {
     transform: rotate(-90deg); } }
 
-.bar:hover {
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
-  transform: scale(0.98, 1.1); }
+.container__section__padding-top {
+  padding-top: 20px; }
 
-.slider {
-  width: 100%; }
-
-.separateTopButton {
-  padding: 20px 0; }
-
-h2 {
-  padding: 15px 0; }
-
-.iconoContenido {
+.section__icono__fa {
   color: black;
   font-size: 50px;
   margin-right: 10px; }
 
-div p {
+section div p {
   text-align: justify; }
 
 /* footer */
 footer {
   background: linear-gradient(180deg, #b32a15 0%, black 100%);
   padding: 20px 0px; }
-
-footer a, footer a:hover {
-  text-decoration: none;
-  color: white; }
-
-footer li {
-  list-style: none; }
-
-.pie {
-  color: white; }
-
-.pie ul {
-  margin: 0;
-  padding: 0; }
-
-.pie i {
-  padding-right: 5px; }
-
-/* Formulario */
-.btn {
-  justify-content: center;
-  align-content: center; }
-
-.btn-info.custom-btn {
-  background: linear-gradient(180deg, #b32a15 0%, black 100%);
-  border-color: black; }
+  footer a, footer a:hover {
+    text-decoration: none;
+    color: white; }
+  footer li {
+    list-style: none; }
+  footer .footer__columnas {
+    color: white; }
+    footer .footer__columnas ul {
+      margin: 0;
+      padding: 0; }
+    footer .footer__columnas i {
+      padding-right: 5px; }
 
 form {
   padding-bottom: 20px; }
+  form .btn {
+    justify-content: center;
+    align-content: center; }
+  form .btn-info.custom-btn {
+    background: linear-gradient(180deg, #b32a15 0%, black 100%);
+    border-color: black; }
 
 @media only screen and (max-width: 800px) {
   * {
@@ -90,7 +74,7 @@ form {
     display: none; }
   header {
     margin-top: 50px; }
-  .pie {
-    padding: 10px 0; }
   footer {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+    footer .footer__columnas {
+      padding: 10px 0; } }

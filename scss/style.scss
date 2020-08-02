@@ -6,19 +6,30 @@ nav{
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(179, 42, 21) 100%);
 }
 
-.navbar-nav > li{
-    padding-left:15px;
-    padding-right:15px;
-  }
+.menu__lista{
 
-  .navbar-nav > li > a{
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+    li{
+        padding-left:15px;
+        padding-right:15px;
 
-  .fa-gavel{
-    /*transform: rotate(270deg);*/
+        a{
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+
+    }
+
+    .menu__lista__items:hover{
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
+        transform: scale(.98, 1.1);
+    }
+
+}
+
+.mazo__logo{
     color: white;
     margin: 5px;
     animation-name: martillo;
@@ -35,32 +46,17 @@ nav{
     }
 }
 
-.bar:hover{
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
-    transform: scale(.98, 1.1);
+.container__section__padding-top{
+    padding-top: 20px;
 }
 
-.slider{
-    width: 100%;
-}
-
-.separateTopButton{
-    padding: 20px 0;
-}
-
-h2{
-    padding: 15px 0;;
-}
-
-.iconoContenido{
+.section__icono__fa{
     color: black;
     font-size:50px;
     margin-right: 10px;
 }
 
-div p{
+section div p{
     text-align: justify;
 }
 
@@ -69,46 +65,44 @@ div p{
 footer{
     background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
     padding: 20px 0px;
+
+    a, a:hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    .footer__columnas{
+        color: white;
+
+        ul{
+            margin:0;
+            padding: 0;
+        }
+
+        i{
+            padding-right: 5px;
+        }
+    }
 }
 
-footer a, footer a:hover{
-    text-decoration: none;
-    color: white;
-    
-}
-
-footer li{
-    list-style: none;
-}
-
-
-.pie{
-    color: white;
-}
-
-.pie ul{
-    margin:0;
-    padding: 0;
-}
-
-.pie i{
-    padding-right: 5px;
-}
-
-/* Formulario */
-
-.btn{
-    justify-content: center;
-    align-content: center;
-}
-
-.btn-info.custom-btn {
-	background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
-    border-color: black;
-}
 
 form{
     padding-bottom: 20px;
+
+    .btn{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .btn-info.custom-btn {
+        background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
+        border-color: black;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -121,10 +115,11 @@ form{
     header{
         margin-top: 50px;
     }
-    .pie{
-        padding: 10px 0;
-    }
+    
     footer{
         padding-left: 20px;
+        .footer__columnas{
+            padding: 10px 0;
+        }
     }
   }

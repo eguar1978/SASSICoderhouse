@@ -18,35 +18,35 @@
     <header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><i class="fa fa-gavel"></i>Pinto Bracesco</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-gavel mazo__logo"></i>Pinto Bracesco</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="bar">
+                <ul class="navbar-nav ml-auto menu__lista">
+                    <li class="menu__lista__items">
                         <a href="index.html">
                             Inicio
                         </a>
                     </li>
-                    <li class="bar">
+                    <li class="menu__lista__items">
                         <a href="equipo.html">
                             Equipo
                         </a>
                     </li>
-                    <li class="bar">
+                    <li class="menu__lista__items">
                         <a href="servicios.html">
                             Servicios
                         </a>
                     </li>
-                    <li class="bar">
+                    <li class="menu__lista__items">
                         <a href="contactenos.html">
                             Contactenos
                         </a>
                     </li>
-                    <li class="bar">
+                    <li class="menu__lista__items">
                         <a href="ayuda.html">
                             FAQ
                         </a>
@@ -54,7 +54,18 @@
                 </ul>
             </div>
         </nav>
-        <div id="carouselWeb" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselWeb" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselWeb" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselWeb" data-slide-to="1"></li>
+                <li data-target="#carouselWeb" data-slide-to="2"></li>
+                <li data-target="#carouselWeb" data-slide-to="3"></li>
+                <li data-target="#carouselWeb" data-slide-to="4"></li>
+                <li data-target="#carouselWeb" data-slide-to="5"></li>
+                <li data-target="#carouselWeb" data-slide-to="6"></li>
+                <li data-target="#carouselWeb" data-slide-to="7"></li>
+                <li data-target="#carouselWeb" data-slide-to="8"></li>
+              </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/slider1.jpg" class="d-block w-100" alt="">
@@ -95,7 +106,7 @@
           </div>
     </header>
     <section>
-        <div class="container">
+        <div class="container container__section__padding-top">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Nuestra Historia</h2>
@@ -105,11 +116,13 @@
                 </div>
                 <div class="col-lg-6">
                     <h3>Nuestra Misi&oacute;n</h3>
+                    <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos in deserunt consectetur tenetur ea
                     sapiente. Quo ad aut, ex nesciunt vero maxime ut illo alias vel sapiente tempora veritatis! Porro.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolores facilis soluta dolorem animi
                     iste itaque, quod quaerat error vitae expedita eius, et quisquam aliquid inventore ullam rerum,
                     dolorum ab.
+                    </p>
                 </div>
                 <div class="col-lg-6">
                     <h3>Nuestra Visi&oacute;n</h3>
@@ -128,18 +141,18 @@
     <footer>
         <div class="container-lg container-sm">
             <div class="row">
-                <div class="col-lg-4 col-sm-12 pie">
+                <div class="col-lg-4 col-sm-12 footer__columnas">
                     <h4><i class="fa fa-map"></i>Direccion</h4>
                     <i class="fa fa-map-marker"></i>Calle 1 4555, entre calle 2 y 4
                 </div>
-                <div class="col-lg-4 col-sm-12 pie">
+                <div class="col-lg-4 col-sm-12 footer__columnas">
                     <h4><a href="contactenos.html">Contacto</a></h4>
                     <ul>
                         <li><i class="fa fa-phone"></i>Telefono 123456789</li>
                         <li><i class="fa fa-mobile"></i>Celular 987654321</li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-sm-12 pie">
+                <div class="col-lg-4 col-sm-12 footer__columnas">
                     <h4><a href="ayuda.html"><i class="fa fa-question-circle"></i>Preguntas Frecuentes</a></h4>
                 </div>
             </div>
