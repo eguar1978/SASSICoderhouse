@@ -1,197 +1,96 @@
-* {
-  margin: 0;
-  padding: 0; }
+body {
+  background-color: #e4cfc8 !important; }
 
-header {
+nav {
   background: linear-gradient(180deg, black 0%, #b32a15 100%); }
 
-nav a {
+.navbar-nav > li {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
   text-decoration: none; }
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 12px 70px; }
-
-h2, h3 {
-  padding-bottom: 10px; }
 
 .fa-gavel {
   /*transform: rotate(270deg);*/
   color: white;
-  font-size: 36px;
   margin: 5px;
   animation-name: martillo;
   animation-duration: 3s;
   animation-iteration-count: infinite; }
 
 @keyframes martillo {
-  from {
-    transform: rotate(270deg); }
+  from { }
   to {
-    transform: rotate(180deg); } }
+    transform: rotate(-90deg); } }
+
+.bar:hover {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.2em 0.2em 0.2em white;
+  transform: scale(0.98, 1.1); }
+
+.slider {
+  width: 100%; }
+
+.separateTopButton {
+  padding: 20px 0; }
+
+h2 {
+  padding: 15px 0; }
 
 .iconoContenido {
   color: black;
   font-size: 50px;
   margin-right: 10px; }
 
-.iconoContenido2 {
-  margin-top: 20px;
-  color: black;
-  font-size: 25px;
-  margin-right: 10px; }
-
-.logo {
-  margin-right: auto; }
-
-.slider {
-  width: 100%; }
-
-.bar {
-  list-style: none; }
-
-.bar li {
-  display: inline-block;
-  padding: 0 15px; }
-
-.bar li a {
-  color: #fff;
-  text-transform: uppercase; }
-
-.bar li:hover {
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px black, 0.1em 0.1em 0.1em white, 0.3em 0.3em 0.3em white;
-  transform: scale(1.1, 1.1); }
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: white; }
-
-/* Cuerpo de Index */
-.contenido {
-  padding: 25px;
-  height: 190px; }
-
-/* Cuerpo Equipo */
-.contenido2 {
-  padding: 25px;
-  width: 70%;
-  height: auto;
+div p {
   text-align: justify; }
 
-.contenido3 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 25px;
-  width: 35%;
-  height: auto;
-  text-align: justify; }
-
-.contenido4 {
-  padding: 25px;
-  width: 80%;
-  height: auto;
-  text-align: justify; }
-
-ol {
-  padding: 5px 15px; }
-
+/* footer */
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
   background: linear-gradient(180deg, #b32a15 0%, black 100%);
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px; }
+  padding: 20px 0px; }
 
-.pie {
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 50px 25px 50px 25px;
-  color: white;
-  width: 25%; }
-
-.pie ul {
-  list-style: none; }
-
-/* FORMULARIO DE CONTACTO */
-.formulario {
-  display: flex;
-  width: 500px;
-  margin-top: 10px;
-  justify-content: space-around;
-  background-color: #f1f0f0; }
-
-label, select, input, textarea {
-  display: flex;
-  padding: 5px;
-  float: left;
-  width: 200px;
-  justify-content: left;
-  align-items: center; }
-
-.checkbox {
-  width: 200px;
-  position: relative;
-  left: -35px;
-  margin-top: 15px; }
-
-.contactenos {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  padding: 10px; }
-
-.boton {
-  justify-content: center; }
-
-footer a {
+footer a, footer a:hover {
   text-decoration: none;
   color: white; }
 
-/* GRIDS */
-/* Cuerpo Servicios */
-.grid-containerServicios {
-  display: grid;
-  grid-template-columns: 10% repeat(3, 1fr) 10%;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1px 1em;
-  grid-template-areas: "a b b b z" "a c c c z" "a d d d z"; }
+footer li {
+  list-style: none; }
 
-.a {
-  grid-area: a; }
+.pie {
+  color: white; }
 
-.contenidoSDC {
-  grid-area: b; }
+.pie ul {
+  margin: 0;
+  padding: 0; }
 
-.contenidoSDF {
-  grid-area: c; }
+.pie i {
+  padding-right: 5px; }
 
-.contenidoSDL {
-  grid-area: d; }
+/* Formulario */
+.btn {
+  justify-content: center;
+  align-content: center; }
 
-.z {
-  grid-area: z; }
+.btn-info.custom-btn {
+  background: linear-gradient(180deg, #b32a15 0%, black 100%);
+  border-color: black; }
 
-.contenidoSDC, .contenidoSDF, .contenidoSDL {
-  text-align: justify; }
+form {
+  padding-bottom: 20px; }
 
-.grid-containerServicios h2 {
-  padding-bottom: 10px; }
-
-body {
-  background-color: blue;
-  color: orangered;
-  font-style: italic; }
+@media only screen and (max-width: 800px) {
+  * {
+    font-size: 0.98em; }
+  #carouselWeb {
+    display: none; }
+  header {
+    margin-top: 50px; }
+  .pie {
+    padding: 10px 0; }
+  footer {
+    padding-left: 20px; } }

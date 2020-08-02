@@ -67,8 +67,8 @@ div p{
 /* footer */
 
 footer{
-    background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
-    padding: 20px 0px;
+    background: linear-gradient(180deg, rgba(179, 42, 21) 0%, rgb(0, 0, 0,1) 100%);
+    padding: 20px 0;
 }
 
 footer a, footer a:hover{
@@ -103,7 +103,7 @@ footer li{
 }
 
 .btn-info.custom-btn {
-	background: linear-gradient(180deg, rgb(179, 42, 21) 0%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgba(179, 42, 21) 0%, rgb(0, 0, 0,1) 100%);
     border-color: black;
 }
 
@@ -123,8 +123,5 @@ form{
     }
     .pie{
         padding: 10px 0;
-    }
-    footer{
-        padding-left: 20px;
     }
   }
